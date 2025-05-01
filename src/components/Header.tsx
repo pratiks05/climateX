@@ -13,7 +13,7 @@ const Header = () => {
                 <img
                 src={isDark? "/logo1.png":"/logo.png"}
                 alt="Klimate Logo"
-                className="h-16"
+                className="h-20"
                 />
             </Link>
 
