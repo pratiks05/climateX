@@ -17,7 +17,6 @@ import WeatherForecast from "../components/weather-forecast";
 
 
 
-
 export function WeatherDashboard() {
   const {
     coordinates,
