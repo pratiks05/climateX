@@ -11,6 +11,7 @@ import { MapPin, AlertTriangle, RefreshCw } from "lucide-react";
 import WeatherSkeleton from "../components/loading-skeleton";
 import { useGeolocation } from "../hooks/use-geolocation";
 import { CurrentWeather } from "../components/current-weather";
+import HourlyTemperature from "../components/hourly-temperature";
 
 
 
@@ -118,7 +119,9 @@ export function WeatherDashboard() {
             data={weatherQuery.data}
             locationName={locationName}
           />
-          {/* <HourlyTemperature data={forecastQuery.data} /> */}
+          <HourlyTemperature
+           data={forecastQuery.data}
+            />
         </div>
 
         <div className="grid gap-6 md:grid-cols-2 items-start">
